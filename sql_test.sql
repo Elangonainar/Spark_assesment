@@ -1,6 +1,6 @@
 Use DB1;
 
--- How many total messages are being sent every day? 
+-- How many total messages are being sent every day? ANswer in the result of the query
 select DATE(createdAt) as  message_date, count(id) as daily_message_count from message 
 group by DATE(createdAt);
 
@@ -13,7 +13,7 @@ where m.receiverId is null;
 select count(*) as active_subscriptions_today from subscription 
 where endDate >= current_date() and status = 'Active';
 
--- Are there users sending messages without an active subscription?
+-- Are there users sending messages without an active subscription? Yes
 select Distinct UserId from users u 
 inner join subscription s on u.Hash_column = s.Hash_column
 inner join message m on u.userId = m.senderId
