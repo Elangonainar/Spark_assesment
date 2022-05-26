@@ -25,7 +25,7 @@ How to monitor it (SQL query)? Please explain how do you suggest to handle with 
 
 Answer: Yes we have some data received with null values which doesn't hold the required information, We can
 preprocess the data to validate wheather we have all the required information or not. 
-We can also use the below sample SQL query to check and find the noisy data
+We can also use the below sample SQL query to check and find the noisy data where we dont have city details
 */
 Select userId, case when city= 'None' then 'Noisy Data' Else 'Good Data' END as Data_Quality from users;
 
