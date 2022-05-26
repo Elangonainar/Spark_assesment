@@ -1,5 +1,5 @@
 # Spark_assesment
-This assesment is about a spark application to extract the data from the given URL and transform them accordingly to load the new data and updated data into Mysql Database.
+This assessment is about a spark application to extract the data from the given URL and transform them accordingly to load the new data and updated data into Mysql Database.
 
 **Repository contents**:
 - spark_assesment/spark_network.py
@@ -17,7 +17,7 @@ This assesment is about a spark application to extract the data from the given U
 - pip install mysql-connector-python-rf
 - pip install pandas
 - Git pull the repository to local "https://github.com/Elangonainar/Spark_assesment.git"
-- Run the spark_prerequest.sql file using Mysql developer tool(Mysql workbench) to create the Database and table objects.
+- Run the "spark_prerequest.sql" file using Mysql developer tool(Mysql workbench) to create the Database and table objects.
 
 **Steps to trigger the application**:
 - The configuration parameters are in the file "Spark_assesment/spark_assesment/Schema_Info.py". Update the local machine Mysql user name and password. Host name has been configured as localhost and the Name of the database used is "DB1"
