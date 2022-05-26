@@ -14,7 +14,7 @@ sc = spark.sparkContext
 brConnect = sc.broadcast(connection_props)
 
 ####################################################
-# This mett=hod is to Extract data from HTTPS URL
+# This method is to Extract data from HTTPS URL
 ####################################################
 def getDataFromLink(url):
     f = urllib.request.urlopen(url)
@@ -23,7 +23,7 @@ def getDataFromLink(url):
     return extractedData
 
 ####################################################
-# This mett=hod is to Get Connection from Database
+# This method is to Get Connection from Database
 ####################################################
 def get_db_connection():
     database = connection_props.get("database")
