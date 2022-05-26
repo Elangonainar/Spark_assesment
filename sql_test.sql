@@ -4,16 +4,16 @@ Use DB1;
 select DATE(createdAt) as  message_date, count(id) as daily_message_count from message 
 group by DATE(createdAt);
 
--- Are there any users that did not receive any message? Yes
+-- Are there any users that did not receive any message? Answer: Yes
 select u.* from users u 
 left join message m on u.userId = m.receiverId
 where m.receiverId is null;
 
--- How many active subscriptions do we have today? 3
+-- How many active subscriptions do we have today? Answer: 3
 select count(*) as active_subscriptions_today from subscription 
 where endDate >= current_date() and status = 'Active';
 
--- Are there users sending messages without an active subscription? Yes
+-- Are there users sending messages without an active subscription? Answer: Yes
 select Distinct UserId from users u 
 inner join subscription s on u.Hash_column = s.Hash_column
 inner join message m on u.userId = m.senderId
