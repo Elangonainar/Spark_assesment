@@ -29,7 +29,7 @@ This assesment is about a spark application to extract the data from the given U
           
           
 **About the application:**
-This application extracts the Json data from the given URL and load that into a MySql Database. This data will be loaded into 3 different tables Users, Subscription and message. If there is any new data arrived while executing the application those data will be loaded into DB. The application also take care of existing data which came as a update, the updates are tracked using updateAt column in User table.
+This application extracts the Json data from the given URL and load that into a MySql Database. This data will be loaded into 3 different tables Users, Subscription and message. If there is any new data arrived while executing the application those data will be loaded into DB. The application also take care of existing data which came as a update, the updates are tracked using updateAt column in User table. Used md5 function to mask the PII data.
 
 
 Also added a file "Spark_assesment/sql_test.sql". Open that file and run the query to get answers for the below question,
