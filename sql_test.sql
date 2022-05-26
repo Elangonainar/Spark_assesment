@@ -1,6 +1,6 @@
 Use DB1;
 
--- How many total messages are being sent every day? ANswer in the result of the query
+-- How many total messages are being sent every day? Answer in the result of the query
 select DATE(createdAt) as  message_date, count(id) as daily_message_count from message 
 group by DATE(createdAt);
 
