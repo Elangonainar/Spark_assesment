@@ -2,11 +2,12 @@
 This assesment is about a spark application to extract the data from the given URL and transform them accordingly to load the new data and updated data into Mysql Database.
 
 **Repository contents**:
-- Spark_assesment/spark_assesment/spark_network.py
-- Spark_assesment/spark_assesment/Schema_Info.py
-- Spark_assesment/spark_prerequest.sql
-- Spark_assesment/sql_test.sql
+- spark_assesment/spark_network.py
+- spark_assesment/Schema_Info.py
+- spark_prerequest.sql
+- sql_test.sql
 - README.md
+- Spark_Network_Senior_Data_Engineer_challenge
 
 **Environment used for development and Pre-request**:
 - spark-3.2.1-bin-hadoop3.2
